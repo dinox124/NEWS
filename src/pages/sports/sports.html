@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>SPORTS</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+          <section *ngFor="let movies of moviesList;let i = index;" (click)="openReview(movies.imageurl,movies._id)">
+      <ion-item>
+          
+        <ion-thumbnail item-start>
+            <img [src]="movies.imageurl">
+        </ion-thumbnail>
+          <h2>{{movies.name}}</h2>
+          <p>{{movies.releseDate}}</p>
+          
+      </ion-item>
+  </section>
+  </ion-list>
+</ion-content>

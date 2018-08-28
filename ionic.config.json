@@ -1,0 +1,7 @@
+{
+  "name": "Google",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
